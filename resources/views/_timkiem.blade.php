@@ -1,0 +1,10 @@
+@extends('layout')
+@section('title',$title)
+@section('content')
+<?=view('timkiem',['listtin'=>$listtin,'tukhoa'=>$tukhoa]);?>
+@stop
+@section('sidebar')
+<?=view('tinxemnhieu',['lang'=>$lang]);?>
+<?=view('loaitin',['lang'=>$lang]);?>
+<?=view('banxemchua',['lang'=>$lang]);?>
+@stop
